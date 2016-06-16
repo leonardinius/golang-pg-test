@@ -1,0 +1,10 @@
+dbpostgresql:
+  build: postgresql
+  volumes:
+    - "./.data/postgres:/var/lib/postgresql/data"
+  restart: always
+  environment:
+    POSTGRES_PASSWORD: mysecretpassword
+  ports:
+    - "5432:5432"
+

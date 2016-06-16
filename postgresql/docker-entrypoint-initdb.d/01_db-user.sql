@@ -1,0 +1,4 @@
+CREATE ROLE dbuser with CREATEDB LOGIN ENCRYPTED PASSWORD 'dbuser';
+
+CREATE DATABASE "dbuser" encoding = 'UTF8' OWNER dbuser;
+GRANT ALL PRIVILEGES ON DATABASE dbuser TO dbuser;
